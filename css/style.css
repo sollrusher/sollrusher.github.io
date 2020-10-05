@@ -23,15 +23,17 @@ body{
     height: 100%;
     font-family: 'Playfair Display', serif;
     display: table-cell;
-        font-size: 2vw;
+    font-size: 2vw;
+    margin: 15px 35px 0 0;
+    text-align: end;
 }
-.headRight p{
+ .headRight p{
 
     margin: 0;
-        text-align: end;
+        
 
 
-}
+} 
 
 
 
@@ -81,7 +83,7 @@ body{
 }.checkAll:active {
     background-color: #aed4af;
 }.checkAll:hover {
-    box-shadow: 0 12px 16px 0 rgba(243, 243, 243, 0.24), 0 17px 50px 0 rgba(233, 231, 231, 0.19);
+    box-shadow: 0 12px 16px 0 rgba(243, 243, 243, 0.24);
     cursor: pointer;
 }
 
@@ -101,7 +103,7 @@ body{
     color: white;
     width: 100%;
     outline: none;
-    border-left: 1px solid white;
+    overflow: scroll;
     
 }
 
@@ -142,6 +144,8 @@ body{
     width: 15px;
     height: 15px;
     cursor: pointer;
+    margin-left: 65px;
+    
 }
 .delete:hover{
     background-color: red;
@@ -198,8 +202,9 @@ body{
 
  @media all and (max-width: 1000px) {
     .todo{
-        width: 65vw;
+        width: 70vw;
         left: calc(50% - 43vw);
+        height: 68vh;
     }
     .headLeft{
         font-size: 23px;
@@ -207,5 +212,21 @@ body{
     .headRight{
         margin:0;
         font-size: 23px;
+    }
+    .inputTodo{
+        font-size: 2em;
+        padding: 0;
+    }
+    .inputTodo::placeholder{
+        font-size: 0.4em;
+    }
+    .footerRight{
+        flex-direction: row;
+
+    }
+    .footerRight input{
+        height: 15px;
+        width: 15px;
+        margin: 9px;
     }
 } 
