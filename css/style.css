@@ -26,10 +26,10 @@ body{
     background-color: white;
     color: white;
     position: absolute;
-     left: calc(50% - 20vw);
+     left: calc(50% - 15vw);
     top: calc(50% - 38vh); 
     padding: 0;
-    width: 40vw;
+    width: 30vw;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
    
 }
